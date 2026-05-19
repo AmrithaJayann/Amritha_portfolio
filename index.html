@@ -39,6 +39,22 @@
 				border-radius: 50%;
 				background: var(--accent);
 			}
+			.timeline .company-logo {
+				display: inline-block;
+				background: #fff;
+				border-radius: 6px;
+				padding: 5px 10px;
+				margin-bottom: 0.5em;
+				height: 2.4em;
+				line-height: 0;
+			}
+			.timeline .company-logo img {
+				height: 100%;
+				width: auto;
+				max-width: 120px;
+				object-fit: contain;
+				display: block;
+			}
 			.timeline .role { font-weight: 600; font-size: 1em; margin-bottom: 0.1em; }
 			.timeline .org  { color: var(--accent); font-size: 0.9em; margin-bottom: 0.1em; }
 			.timeline .date { font-size: 0.8em; opacity: 0.6; margin-bottom: 0.5em; }
@@ -141,6 +157,7 @@
 						<li><a href="#about">About</a></li>
 						<li><a href="#experience">Experience</a></li>
 						<li><a href="#education">Education</a></li>
+						<li><a href="#projects">Projects</a></li>
 						<li><a href="#skills">Skills</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
@@ -194,6 +211,7 @@
 					<ul class="timeline">
 
 						<li>
+							<div class="company-logo"><img src="images/nside logo.jpg" alt="N-SIDE" /></div>
 							<div class="role">Power System Analyst</div>
 							<div class="org">N-SIDE &nbsp;·&nbsp; Brussels, Belgium</div>
 							<div class="date">December 2024 – Present</div>
@@ -208,6 +226,7 @@
 						</li>
 
 						<li>
+							<div class="company-logo"><img src="images/aliander logo.png" alt="Alliander" /></div>
 							<div class="role">Graduate Intern – Congestion Management Research</div>
 							<div class="org">Alliander &nbsp;·&nbsp; Netherlands</div>
 							<div class="date">January 2024 – August 2024</div>
@@ -218,6 +237,7 @@
 						</li>
 
 						<li>
+							<div class="company-logo"><img src="images/Wipro logo.png" alt="Wipro" /></div>
 							<div class="role">Associate Consultant – SAP ABAP</div>
 							<div class="org">Wipro &nbsp;·&nbsp; India (with onsite at DEWA, UAE)</div>
 							<div class="date">March 2021 – August 2022</div>
@@ -238,14 +258,14 @@
 
 					<div class="edu-card">
 						<div class="degree">M.Sc. Smart Electrical Networks and Systems – EIT InnoEnergy</div>
-						<div class="inst">KTH Royal Institute of Technology &nbsp;·&nbsp; Stockholm, Sweden &nbsp;·&nbsp; 2022–2023</div>
-						<div class="period">2022 – 2024</div>
+						<div class="inst">KTH Royal Institute of Technology &nbsp;·&nbsp; Stockholm, Sweden</div>
+						<div class="period">2022 – 2023</div>
 						<div class="courses">Electricity Market Analysis · Power System Planning (GAMS, Python) · Power System Analysis · Power Grid Technology &amp; Substation Design · Computer Applications in Power Systems (PandaPower)</div>
 					</div>
 
 					<div class="edu-card">
 						<div class="degree">M.Sc. Smart Electrical Networks and Systems – EIT InnoEnergy (cont.)</div>
-						<div class="inst">Eindhoven University of Technology &nbsp;·&nbsp; Eindhoven, Netherlands &nbsp;·&nbsp; 2023–2024</div>
+						<div class="inst">Eindhoven University of Technology &nbsp;·&nbsp; Eindhoven, Netherlands</div>
 						<div class="period">2023 – 2024</div>
 						<div class="courses">Power Quality (DIgSILENT PowerFactory) · Numerical Methods in Electrical Engineering · Energy Transition · Planning and Operation of Electrical Power Systems</div>
 					</div>
@@ -264,9 +284,11 @@
 						<div class="inst">NSS College of Engineering &nbsp;·&nbsp; Palakkad, India</div>
 						<div class="period">2016 – 2020</div>
 					</div>
+				</article>
 
-					<hr class="soft-hr" />
-					<p class="section-label">Academic Highlights</p>
+				<!-- Projects -->
+				<article id="projects">
+					<h2 class="major">Projects</h2>
 
 					<div class="project-card">
 						<div class="p-title">Master Thesis – Congestion Management in N and N-1 Scenarios for MV Routes</div>
