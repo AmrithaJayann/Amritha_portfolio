@@ -79,12 +79,47 @@
 			}
 
 			/* Education cards */
-			.edu-card { border-left: 3px solid var(--accent); padding: 0 0 1.2em 1em; margin-bottom: 1.2em; }
-			.edu-card:last-child { margin-bottom: 0; padding-bottom: 0; }
-			.edu-card .degree { font-weight: 600; font-size: 0.95em; }
-			.edu-card .inst   { color: var(--accent); font-size: 0.88em; margin: 0.15em 0; }
-			.edu-card .period { font-size: 0.8em; opacity: 0.6; margin-bottom: 0.4em; }
-			.edu-card .courses{ font-size: 0.82em; opacity: 0.8; line-height: 1.6; }
+			.edu-card {
+				border: 1px solid rgba(255,255,255,0.1);
+				border-radius: 8px;
+				overflow: hidden;
+				margin-bottom: 1.2em;
+				background: rgba(255,255,255,0.03);
+			}
+			.edu-card:last-child { margin-bottom: 0; }
+			.edu-card .edu-photo {
+				width: 100%;
+				height: 130px;
+				overflow: hidden;
+			}
+			.edu-card .edu-photo img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center center;
+				display: block;
+			}
+			.edu-card .edu-body { padding: 0.8em 1em 1em; }
+			.edu-card .edu-logo {
+				display: inline-block;
+				background: #fff;
+				border-radius: 6px;
+				padding: 4px 10px;
+				margin-bottom: 0.6em;
+				height: 2em;
+				line-height: 0;
+			}
+			.edu-card .edu-logo img {
+				height: 100%;
+				width: auto;
+				max-width: 120px;
+				object-fit: contain;
+				display: block;
+			}
+			.edu-card .degree { font-weight: 600; font-size: 0.92em; margin-bottom: 0.2em; }
+			.edu-card .inst   { color: var(--accent); font-size: 0.85em; margin: 0.15em 0; }
+			.edu-card .period { font-size: 0.78em; opacity: 0.6; margin-bottom: 0.4em; }
+			.edu-card .courses{ font-size: 0.8em; opacity: 0.8; line-height: 1.6; }
 
 			/* Project cards */
 			.project-card {
@@ -255,35 +290,51 @@
 				<article id="education">
 					<h2 class="major">Education</h2>
 
-					<p class="section-label">Graduate</p>
+					<p class="section-label">Masters</p>
 
 					<div class="edu-card">
-						<div class="degree">M.Sc. Smart Electrical Networks and Systems – EIT InnoEnergy</div>
-						<div class="inst">KTH Royal Institute of Technology &nbsp;·&nbsp; Stockholm, Sweden</div>
-						<div class="period">2022 – 2023</div>
-						<div class="courses">Electricity Market Analysis · Power System Planning (GAMS, Python) · Power System Analysis · Power Grid Technology &amp; Substation Design · Computer Applications in Power Systems (PandaPower)</div>
+						<div class="edu-photo"><img src="images/eindhoven university.jpg" alt="TU/e campus" /></div>
+						<div class="edu-body">
+							<div class="edu-logo"><img src="images/eindhoven logo.png" alt="TU/e logo" /></div>
+							<div class="degree">M.Sc. Smart Electrical Networks and Systems – EIT InnoEnergy</div>
+							<div class="inst">Eindhoven University of Technology &nbsp;·&nbsp; Eindhoven, Netherlands</div>
+							<div class="period">2023 – 2024</div>
+							<div class="courses">Power Quality (DIgSILENT PowerFactory) · Numerical Methods in Electrical Engineering · Energy Transition · Planning and Operation of Electrical Power Systems</div>
+						</div>
 					</div>
 
 					<div class="edu-card">
-						<div class="degree">M.Sc. Smart Electrical Networks and Systems – EIT InnoEnergy (cont.)</div>
-						<div class="inst">Eindhoven University of Technology &nbsp;·&nbsp; Eindhoven, Netherlands</div>
-						<div class="period">2023 – 2024</div>
-						<div class="courses">Power Quality (DIgSILENT PowerFactory) · Numerical Methods in Electrical Engineering · Energy Transition · Planning and Operation of Electrical Power Systems</div>
+						<div class="edu-photo"><img src="images/kth university.jpg" alt="KTH campus" /></div>
+						<div class="edu-body">
+							<div class="edu-logo"><img src="images/kth logo.png" alt="KTH logo" /></div>
+							<div class="degree">M.Sc. Smart Electrical Networks and Systems – EIT InnoEnergy</div>
+							<div class="inst">KTH Royal Institute of Technology &nbsp;·&nbsp; Stockholm, Sweden</div>
+							<div class="period">2022 – 2023</div>
+							<div class="courses">Electricity Market Analysis · Power System Planning (GAMS, Python) · Power System Analysis · Power Grid Technology &amp; Substation Design · Computer Applications in Power Systems (PandaPower)</div>
+						</div>
 					</div>
 
 					<div class="edu-card">
-						<div class="degree">Business Diploma – Innovation &amp; Entrepreneurship Journey – EIT InnoEnergy</div>
-						<div class="inst">ESADE Business School &nbsp;·&nbsp; Barcelona, Spain</div>
-						<div class="period">2023</div>
-						<div class="courses">Entrepreneurship · Marketing for Technology Ventures · Entrepreneurial Finance · Energy &amp; Geopolitics · Operations Management · Human Resources Management</div>
+						<div class="edu-photo"><img src="images/esade university.jpg" alt="ESADE campus" /></div>
+						<div class="edu-body">
+							<div class="edu-logo"><img src="images/esade logo.png" alt="ESADE logo" /></div>
+							<div class="degree">Business Diploma – Innovation &amp; Entrepreneurship Journey – EIT InnoEnergy</div>
+							<div class="inst">ESADE Business School &nbsp;·&nbsp; Barcelona, Spain</div>
+							<div class="period">2023</div>
+							<div class="courses">Entrepreneurship · Marketing for Technology Ventures · Entrepreneurial Finance · Energy &amp; Geopolitics · Operations Management · Human Resources Management</div>
+						</div>
 					</div>
 
 					<p class="section-label">Undergraduate</p>
 
 					<div class="edu-card">
-						<div class="degree">B.Tech. Electrical and Electronics Engineering</div>
-						<div class="inst">NSS College of Engineering &nbsp;·&nbsp; Palakkad, India</div>
-						<div class="period">2016 – 2020</div>
+						<div class="edu-photo"><img src="images/NSS College.jpg" alt="NSS College campus" /></div>
+						<div class="edu-body">
+							<div class="edu-logo"><img src="images/NSS logo.png" alt="NSS logo" /></div>
+							<div class="degree">B.Tech. Electrical and Electronics Engineering</div>
+							<div class="inst">NSS College of Engineering &nbsp;·&nbsp; Palakkad, India</div>
+							<div class="period">2016 – 2020</div>
+						</div>
 					</div>
 				</article>
 
