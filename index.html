@@ -6,357 +6,386 @@
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>Amritha Jayan – Power Systems Analyst</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Portfolio of Amritha Jayan – Power Systems Engineer specialising in TSO operations, congestion management, and energy transition." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Accent colour overrides – green for energy/sustainability */
+			:root {
+				--accent: #4ade80;
+				--accent-dim: rgba(74, 222, 128, 0.15);
+			}
+			#header .logo .icon { color: var(--accent); }
+
+			/* Timeline layout for experience */
+			.timeline { margin: 0; padding: 0; list-style: none; }
+			.timeline li {
+				position: relative;
+				padding: 0 0 1.5em 1.5em;
+				border-left: 2px solid rgba(255,255,255,0.15);
+				margin-left: 0.4em;
+			}
+			.timeline li:last-child { border-left: 2px solid transparent; padding-bottom: 0; }
+			.timeline li::before {
+				content: '';
+				position: absolute;
+				left: -0.45em;
+				top: 0.4em;
+				width: 0.7em;
+				height: 0.7em;
+				border-radius: 50%;
+				background: var(--accent);
+			}
+			.timeline .role { font-weight: 600; font-size: 1em; margin-bottom: 0.1em; }
+			.timeline .org  { color: var(--accent); font-size: 0.9em; margin-bottom: 0.1em; }
+			.timeline .date { font-size: 0.8em; opacity: 0.6; margin-bottom: 0.5em; }
+			.timeline ul { list-style: disc; padding-left: 1.2em; margin-top: 0.4em; }
+			.timeline ul li {
+				border: none; padding: 0.1em 0; margin: 0;
+				font-size: 0.88em; opacity: 0.85;
+			}
+			.timeline ul li::before { display: none; }
+
+			/* Skills grid */
+			.skills-grid { display: flex; flex-wrap: wrap; gap: 0.5em; margin-top: 0.6em; }
+			.skill-tag {
+				background: var(--accent-dim);
+				border: 1px solid rgba(74,222,128,0.3);
+				border-radius: 2em;
+				padding: 0.25em 0.8em;
+				font-size: 0.82em;
+				color: #fff;
+				white-space: nowrap;
+			}
+
+			/* Education cards */
+			.edu-card { border-left: 3px solid var(--accent); padding: 0 0 1.2em 1em; margin-bottom: 1.2em; }
+			.edu-card:last-child { margin-bottom: 0; padding-bottom: 0; }
+			.edu-card .degree { font-weight: 600; font-size: 0.95em; }
+			.edu-card .inst   { color: var(--accent); font-size: 0.88em; margin: 0.15em 0; }
+			.edu-card .period { font-size: 0.8em; opacity: 0.6; margin-bottom: 0.4em; }
+			.edu-card .courses{ font-size: 0.82em; opacity: 0.8; line-height: 1.6; }
+
+			/* Project cards */
+			.project-card {
+				background: rgba(255,255,255,0.04);
+				border: 1px solid rgba(255,255,255,0.1);
+				border-radius: 6px;
+				padding: 0.8em 1em;
+				margin-bottom: 0.8em;
+			}
+			.project-card:last-child { margin-bottom: 0; }
+			.project-card .p-title { font-weight: 600; font-size: 0.9em; color: var(--accent); margin-bottom: 0.3em; }
+			.project-card .p-desc  { font-size: 0.85em; opacity: 0.85; line-height: 1.6; }
+
+			/* Contact info list */
+			.contact-info { list-style: none; padding: 0; margin: 0 0 1.5em; }
+			.contact-info li { padding: 0.3em 0; font-size: 0.9em; }
+			.contact-info li a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted rgba(74,222,128,0.4); }
+			.contact-info li a:hover { border-bottom-color: var(--accent); }
+			.contact-info .ci-icon { margin-right: 0.6em; opacity: 0.7; }
+
+			/* Section label */
+			.section-label {
+				font-size: 0.72em;
+				letter-spacing: 0.15em;
+				text-transform: uppercase;
+				color: var(--accent);
+				margin: 1.4em 0 0.5em;
+				opacity: 0.9;
+			}
+			.section-label:first-child { margin-top: 0; }
+
+			/* Subtle divider */
+			.soft-hr { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 1.2em 0; }
+
+			#header nav ul li a { letter-spacing: 0.05em; }
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Dimension</h1>
-								<p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-								for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
-							</div>
-						</div>
-						<nav>
+			<!-- Header -->
+			<header id="header">
+				<div class="logo">
+					<span class="icon fa-bolt"></span>
+				</div>
+				<div class="content">
+					<div class="inner">
+						<h1>Amritha Jayan</h1>
+						<p>Power Systems Analyst &nbsp;·&nbsp; TSO Operations &amp; Congestion Management &nbsp;·&nbsp; Energy Transition</p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#about">About</a></li>
+						<li><a href="#experience">Experience</a></li>
+						<li><a href="#education">Education</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- About -->
+				<article id="about">
+					<h2 class="major">About Me</h2>
+					<p>
+						I'm a Power Systems Engineer with a double master's degree from
+						<strong>TU Eindhoven</strong> and <strong>KTH Royal Institute of Technology</strong>
+						(EIT InnoEnergy), specialising in smart electrical networks and European electricity systems.
+					</p>
+					<p>
+						My work sits at the intersection of <strong>grid operations</strong> and
+						<strong>energy markets</strong>: conducting congestion management studies, building
+						flow-based capacity models, performing N-1 contingency analyses, and translating
+						complex technical results into actionable decisions for TSOs and energy stakeholders
+						across Europe and Japan.
+					</p>
+					<p>
+						I'm driven by a passion for building reliable, sustainable energy infrastructure and
+						thrive in international, cross-functional environments where engineering rigour meets
+						real-world impact.
+					</p>
+					<hr class="soft-hr" />
+					<p class="section-label">Currently at</p>
+					<p><strong>N-SIDE</strong> – Brussels, Belgium &nbsp;·&nbsp; Power System Analyst <em>(Dec 2024 – Present)</em></p>
+					<hr class="soft-hr" />
+					<p class="section-label">Quick facts</p>
+					<ul>
+						<li>Based in Belgium &nbsp;·&nbsp; Open to international roles</li>
+						<li>Languages: English (IELTS 8.0), Hindi (Native)</li>
+						<li>IEEE VTS Student Chapter – Secretary, NSS College of Engineering</li>
+						<li>Career Fair Host – THS ARMADA, KTH (Scandinavia's largest career fair)</li>
+					</ul>
+					<br />
+					<ul class="actions">
+						<li><a href="#experience" class="button primary">View Experience</a></li>
+						<li><a href="#contact" class="button">Get in Touch</a></li>
+					</ul>
+				</article>
+
+				<!-- Experience -->
+				<article id="experience">
+					<h2 class="major">Experience</h2>
+					<ul class="timeline">
+
+						<li>
+							<div class="role">Power System Analyst</div>
+							<div class="org">N-SIDE &nbsp;·&nbsp; Brussels, Belgium</div>
+							<div class="date">December 2024 – Present</div>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<li>Conducting congestion management and flow-based capacity calculation studies for European TSOs.</li>
+								<li>Researching and implementing CGMES 2.4 for standardised network model exchange between TSOs.</li>
+								<li>Performing market flexibility studies evaluating demand-side and supply-side flexibility in modern power systems.</li>
+								<li>Executing load flow and N-1 contingency analyses to ensure grid reliability under various operational scenarios.</li>
+								<li>Developing and validating power system network models using Pypowsybl and PandaPower.</li>
+								<li>Supporting energy and market stakeholder consultations and contributing to market reporting across Europe and Japan.</li>
 							</ul>
-						</nav>
-					</header>
+						</li>
 
-				<!-- Main -->
-					<div id="main">
+						<li>
+							<div class="role">Graduate Intern – Congestion Management Research</div>
+							<div class="org">Alliander &nbsp;·&nbsp; Netherlands</div>
+							<div class="date">January 2024 – August 2024</div>
+							<ul>
+								<li>Researched and developed congestion management strategies for medium-voltage (MV) distribution networks under N and N-1 contingency scenarios.</li>
+								<li>Applied Vision and Pyomo (Python) for power flow modelling and optimisation of recovery routes in MV networks.</li>
+							</ul>
+						</li>
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-							</article>
+						<li>
+							<div class="role">Associate Consultant – SAP ABAP</div>
+							<div class="org">Wipro &nbsp;·&nbsp; India (with onsite at DEWA, UAE)</div>
+							<div class="date">March 2021 – August 2022</div>
+							<ul>
+								<li>Developed SAP ABAP software solutions, managing client requirements through to timely delivery.</li>
+								<li>Gained international onsite experience at DEWA (Dubai Electricity and Water Authority), UAE, contributing directly to active project delivery.</li>
+							</ul>
+						</li>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-							</article>
+					</ul>
+				</article>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-							</article>
+				<!-- Education -->
+				<article id="education">
+					<h2 class="major">Education</h2>
 
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
+					<p class="section-label">Graduate</p>
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
+					<div class="edu-card">
+						<div class="degree">M.Sc. Smart Electrical Networks and Systems – EIT InnoEnergy</div>
+						<div class="inst">KTH Royal Institute of Technology &nbsp;·&nbsp; Stockholm, Sweden &nbsp;·&nbsp; 2022–2023</div>
+						<div class="period">2022 – 2024</div>
+						<div class="courses">Electricity Market Analysis · Power System Planning (GAMS, Python) · Power System Analysis · Power Grid Technology &amp; Substation Design · Computer Applications in Power Systems (PandaPower)</div>
 					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+					<div class="edu-card">
+						<div class="degree">M.Sc. Smart Electrical Networks and Systems – EIT InnoEnergy (cont.)</div>
+						<div class="inst">Eindhoven University of Technology &nbsp;·&nbsp; Eindhoven, Netherlands &nbsp;·&nbsp; 2023–2024</div>
+						<div class="period">2023 – 2024</div>
+						<div class="courses">Power Quality (DIgSILENT PowerFactory) · Numerical Methods in Electrical Engineering · Energy Transition · Planning and Operation of Electrical Power Systems</div>
+					</div>
+
+					<div class="edu-card">
+						<div class="degree">Business Diploma – Innovation &amp; Entrepreneurship Journey – EIT InnoEnergy</div>
+						<div class="inst">ESADE Business School &nbsp;·&nbsp; Barcelona, Spain</div>
+						<div class="period">2023</div>
+						<div class="courses">Entrepreneurship · Marketing for Technology Ventures · Entrepreneurial Finance · Energy &amp; Geopolitics · Operations Management · Human Resources Management</div>
+					</div>
+
+					<p class="section-label">Undergraduate</p>
+
+					<div class="edu-card">
+						<div class="degree">B.Tech. Electrical and Electronics Engineering</div>
+						<div class="inst">NSS College of Engineering &nbsp;·&nbsp; Palakkad, India</div>
+						<div class="period">2016 – 2020</div>
+					</div>
+
+					<hr class="soft-hr" />
+					<p class="section-label">Academic Highlights</p>
+
+					<div class="project-card">
+						<div class="p-title">Master Thesis – Congestion Management in N and N-1 Scenarios for MV Routes</div>
+						<div class="p-desc">Alliander &amp; TU Eindhoven · Developed optimisation models using Vision and Pyomo (Python) to evaluate recovery strategies in medium-voltage distribution networks under contingency conditions.</div>
+					</div>
+					<div class="project-card">
+						<div class="p-title">Industrial Innovation Project – Quantifying Demand-Side Flexibility across Sectors in Sweden</div>
+						<div class="p-desc">DNV &amp; KTH Royal Institute of Technology · Assessed demand-side flexibility potential across industry, commercial, and residential sectors in the Swedish energy system.</div>
+					</div>
+					<div class="project-card">
+						<div class="p-title">New Venture Creation – MINDSWITCH</div>
+						<div class="p-desc">ESADE Business School · Co-founded a concept for a group energy switching online platform, covering business model design, go-to-market strategy, and entrepreneurial finance.</div>
+					</div>
+					<div class="project-card">
+						<div class="p-title">Final Year Project – Monitoring Driver Drowsiness using EEG</div>
+						<div class="p-desc">NSS College of Engineering · Designed and implemented a real-time EEG-based system to detect driver drowsiness for road-safety applications.</div>
+					</div>
+				</article>
+
+				<!-- Skills -->
+				<article id="skills">
+					<h2 class="major">Skills</h2>
+
+					<p class="section-label">Power Systems &amp; Grid Tools</p>
+					<div class="skills-grid">
+						<span class="skill-tag">DIgSILENT PowerFactory</span>
+						<span class="skill-tag">Pypowsybl</span>
+						<span class="skill-tag">PandaPower</span>
+						<span class="skill-tag">Vision</span>
+						<span class="skill-tag">GAMS</span>
+						<span class="skill-tag">MATLAB / Simulink</span>
+						<span class="skill-tag">Pyomo</span>
+						<span class="skill-tag">CGMES 2.4</span>
+					</div>
+
+					<p class="section-label">Programming &amp; Data</p>
+					<div class="skills-grid">
+						<span class="skill-tag">Python</span>
+						<span class="skill-tag">C++</span>
+						<span class="skill-tag">SAP ABAP</span>
+						<span class="skill-tag">Jupyter Notebook</span>
+						<span class="skill-tag">GitHub</span>
+					</div>
+
+					<p class="section-label">Domain Expertise</p>
+					<div class="skills-grid">
+						<span class="skill-tag">Congestion Management</span>
+						<span class="skill-tag">Flow-Based Capacity Calculation</span>
+						<span class="skill-tag">N-1 Contingency Analysis</span>
+						<span class="skill-tag">Load Flow Analysis</span>
+						<span class="skill-tag">TSO Operations</span>
+						<span class="skill-tag">Market Flexibility Studies</span>
+						<span class="skill-tag">Demand-Side Flexibility</span>
+						<span class="skill-tag">Power System Modelling</span>
+						<span class="skill-tag">Network Model Exchange</span>
+						<span class="skill-tag">Energy Transition</span>
+					</div>
+
+					<p class="section-label">Productivity &amp; Collaboration</p>
+					<div class="skills-grid">
+						<span class="skill-tag">Confluence</span>
+						<span class="skill-tag">Jira</span>
+						<span class="skill-tag">Excel</span>
+						<span class="skill-tag">PowerPoint</span>
+					</div>
+
+					<p class="section-label">Soft Skills</p>
+					<div class="skills-grid">
+						<span class="skill-tag">Stakeholder Communication</span>
+						<span class="skill-tag">Analytical Thinking</span>
+						<span class="skill-tag">Cross-cultural Collaboration</span>
+						<span class="skill-tag">Adaptability</span>
+					</div>
+
+					<p class="section-label">Languages</p>
+					<div class="skills-grid">
+						<span class="skill-tag">English – Fluent (IELTS 8.0)</span>
+						<span class="skill-tag">Hindi – Native</span>
+					</div>
+				</article>
+
+				<!-- Contact -->
+				<article id="contact">
+					<h2 class="major">Contact</h2>
+					<p>Feel free to reach out — whether it's about power systems, energy market challenges, or potential collaboration.</p>
+
+					<p class="section-label">Get in touch</p>
+					<ul class="contact-info">
+						<li>
+							<span class="ci-icon"><i class="icon solid fa-envelope"></i></span>
+							<a href="mailto:amrithajap@gmail.com">amrithajap@gmail.com</a>
+						</li>
+						<li>
+							<span class="ci-icon"><i class="icon solid fa-phone"></i></span>
+							<a href="tel:+32487711995">+32 487 711 995</a>
+						</li>
+						<li>
+							<span class="ci-icon"><i class="icon brands fa-linkedin"></i></span>
+							<a href="https://linkedin.com/in/amritha-j" target="_blank" rel="noopener">linkedin.com/in/amritha-j</a>
+						</li>
+					</ul>
+
+					<ul class="icons">
+						<li>
+							<a href="https://linkedin.com/in/amritha-j" target="_blank" rel="noopener" class="icon brands fa-linkedin">
+								<span class="label">LinkedIn</span>
+							</a>
+						</li>
+						<li>
+							<a href="mailto:amrithajap@gmail.com" class="icon solid fa-envelope">
+								<span class="label">Email</span>
+							</a>
+						</li>
+					</ul>
+				</article>
 
 			</div>
 
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy; Amritha Jayan 2025. Template: <a href="https://html5up.net" rel="noopener">HTML5 UP</a>.</p>
+			</footer>
+
+		</div>
+
 		<!-- BG -->
-			<div id="bg"></div>
+		<div id="bg"></div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
